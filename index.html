@@ -72,6 +72,15 @@
     <div class="nafbar2 barr">
         <div class="menu border">
             <i class="fa-solid fa-bars fa-lg" style="color: rgb(255, 255, 255);"></i>
+            <div class="popupmenu">
+                <div class="profile">
+                    <i class="fa-solid fa-circle-user" style="color: rgb(46, 87, 120);"></i>
+                    <p>Hello sign in</p>
+                </div>
+                <div class="rou">
+                    <a href="https://www.amazon.com/signin.com" class="seem1">Sign in</a>
+                </div>
+            </div>
             <p class="allmenu">All</p>
         </div>
         <div class="fresh">
@@ -548,7 +557,13 @@ html, body{
 }
 
 body{
-    background-color: blanchedalmond;
+    background: linear-gradient(
+        to bottom,
+        #0B1220 0%,
+        #111827 20%,
+        #1B2433 45%,
+        #EAF1F8 100%
+    );
     color: white;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -790,6 +805,32 @@ body{
     align-items: center;
     margin-left: 10px;
     gap: 2px;
+}
+
+.profile{
+    height: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    gap: 2px;
+}
+
+.popupmenu {
+    display: none;
+    position: absolute;
+    top: 90px;
+    left: 0;
+    width: 150px;
+    color: black;
+    height: 70px;
+    background: white;
+    border: 1px solid black;
+    z-index: 10;
+}
+
+.menu:hover .popupmenu {
+    display: block;
 }
 
 .allmenu{
@@ -1219,7 +1260,7 @@ a{
 .seem3 {
     font-size: 16px;
     text-decoration: underline;
-    color: lightblue;
+    color: #37475a;
 }
 
 .boder{
@@ -1287,7 +1328,7 @@ a{
 .copyrig{
     height: 55px;
     width: 100%;
-    background-color: #37475a6a;
+    background-color: #232f3e;
     color: #dddddd;
     border-color: white;
     font-size: 12px;
@@ -1432,6 +1473,7 @@ a{
     }
 
                                                         /* Hero / background image section */
+
     .f1{
         height: auto;
         flex-direction: column;
